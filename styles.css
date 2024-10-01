@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
-  background-color: white;
+  background-color: skyblue
 }
 
 nav {
@@ -33,7 +33,7 @@ nav a {
 
 nav a[aria-current='page'] {
   color: #000;
-  background-color: #d4d4d4;
+  background-color: #7674ed;
 }
 
 main {
