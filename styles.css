@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
-  background-color: skyblue
+  background-color: rgb(252, 252, 252)
 }
 
 nav {
@@ -46,9 +46,39 @@ h1 {
   text-align: center;
 
 }
-p {
-  word-spacing: 
-}
+
 div {
-  padding-left: 15%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
 }
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 5px solid #000;
+ }
+ .box{ 
+  width: 150px;
+  height: 150px;
+  font-size: 1em;
+  text-align: center;
+ }
+ #box1 {
+  background-color: #555;
+  color:#000
+ }
+ #box2 {
+background-color: yellow;
+color: #000;
+ }
+ #box3 {
+background-color: red;
+color: #000;
+ }
+ #box4 {
+  background-color: aqua;
+  color: #000;
+ }
