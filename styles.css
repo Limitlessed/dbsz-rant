@@ -7,6 +7,10 @@ body {
   font-family: system-ui, sans-serif;
   color: black;
   background-color: rgb(252, 252, 252);
+  
+}
+
+style {
   background-image: url("background2.png");
 }
 
@@ -36,6 +40,10 @@ nav a {
 nav a[aria-current='page'] {
   color: #000;
   background-color: #7674ed;
+}
+
+style{
+background-image: url("background2.png");
 }
 
 main {
