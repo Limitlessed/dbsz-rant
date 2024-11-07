@@ -10,9 +10,6 @@ body {
   
 }
 
-style {
-  background-image: url("background2.png");
-}
 
 nav {
   display: flex;
@@ -43,7 +40,7 @@ nav a[aria-current='page'] {
 }
 
 style{
-background-image: url("background2.png");
+background-image: url("images/background2.png");
 }
 
 main {
