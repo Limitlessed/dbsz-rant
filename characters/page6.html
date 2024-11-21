@@ -19,6 +19,7 @@
     </nav>
     <main>
       <a href="index.html"> Home </a>
+      <select id="Moves"></select>
       <table id="table">
         <thread>
           <tr>
@@ -35,6 +36,17 @@
           </tr>
         </tbody>
       </table>
+      <script>
+        const array=["Final Flash", "Gamma Burst"]
+        const select=document.getElementById("Moves");
+        array.forEach((move) => {
+          option = document.createElement("option")
+          option.value = move;
+          option.text = move;
+          select.appendChild(option)
+        })
+      </script>
+
     </main>
   </body>
 </html>
