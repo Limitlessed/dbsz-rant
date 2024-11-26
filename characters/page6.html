@@ -37,7 +37,7 @@
         </tbody>
       </table>
       <script>
-        const array=["Final Flash", "Gamma Burst"]
+        const array=["Energy", "Rush"]
         const select=document.getElementById("Moves");
         array.forEach((move) => {
           option = document.createElement("option")
@@ -46,7 +46,57 @@
           select.appendChild(option)
         })
       </script>
+      <script>
+      const moves = [{
+        name: "Gamma Burst Flash" ,
+        ki: 3 ,
+        type: "Energy" ,
+       }, {
+        name: "God Final Flash" ,
+        ki: 3 ,
+        type: "Energy" ,
+       }, {
+       name: "Gamma Fist" ,
+        ki: 3 ,
+        type: "Rush" ,
+       }, {
+        name: "God Shine Attack" ,
+        ki: 3 ,
+        type: "Energy" ,
+       }, {
+        name: "Galick Uppercut" ,
+        ki: 3 ,
+        type: "Rush" ,
+       }, {
+        name: "Galick Rush" ,
+        ki: 3 ,
+        type: "Energy" ,
+       },{
+        name: "Galick Gun" ,
+        ki: 3 ,
+        type: "Energy" ,
+       },{
+        name: "Absolute Rush" ,
+        ki: 3 ,
+        type: "Rush" ,
+      }]
+      const writeTableRow = (table,moves) => {
+      const newRow = table.insertRow();
 
+      newRow.innerHTML = `<tr id=${moves.name}>
+         <td>${move.name}</td>
+         <td>${move.name}</td>
+         <td>${move.name}</td>
+         <td>${move.name}</td>
+         <td>${move.name}</td>
+         <td>${move.name}</td>
+         <td>${move.name}</td>
+         <td>${move.name}</td>
+      </tr>`; 
+      }
+      const tableBody = document.getElementsByTagName("tbody") [0];
+      writeTableRow(tableBody, moves[1])
+      </script>
     </main>
   </body>
 </html>
