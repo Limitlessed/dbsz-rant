@@ -29,11 +29,6 @@
           </tr>  
         </thread>
         <tbody>
-          <tr>
-            <td> Gamma Fist </td>
-            <td> 2 Bars </td>
-            <td> Melee </td>
-          </tr>
         </tbody>
       </table>
       <script>
@@ -84,18 +79,21 @@
       const newRow = table.insertRow();
 
       newRow.innerHTML = `<tr id=${moves.name}>
-         <td>${move.name}</td>
-         <td>${move.name}</td>
-         <td>${move.name}</td>
-         <td>${move.name}</td>
-         <td>${move.name}</td>
-         <td>${move.name}</td>
-         <td>${move.name}</td>
-         <td>${move.name}</td>
+         <td>${moves.name}</td>
+         <td>${moves.ki}</td>
+         <td>${moves.type}</td>
       </tr>`; 
       }
       const tableBody = document.getElementsByTagName("tbody") [0];
       writeTableRow(tableBody, moves[1])
+      
+        const makeTable = () => {
+          const table = document.getElementsByTagName("tbody")[0]
+          moves.forEach((row) => {
+            writeTableRow(table,row)
+          })
+        }
+        makeTable()
       </script>
     </main>
   </body>
