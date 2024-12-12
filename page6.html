@@ -84,16 +84,22 @@
          <td>${moves.type}</td>
       </tr>`; 
       }
+
       const tableBody = document.getElementsByTagName("tbody") [0];
       writeTableRow(tableBody, moves[1])
       
         const makeTable = () => {
           const table = document.getElementsByTagName("tbody")[0]
-          moves.forEach((row) => {
-            writeTableRow(table,row)
-          })
+          tableBody.innerHTML = "" ;
+          if (select.value = "all") {
+            moves.forEach ((row) => writeTableRow(table,row));
+          } else {
+            const filtered = moves.filter((r) => select.value == r.type)
+            filtered.forEach((r)=> writeTableRow(tableBody. r))
+          }
         }
         makeTable()
+
       </script>
     </main>
   </body>
