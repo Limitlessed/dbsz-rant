@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+
 
 body {
   margin: 0;
@@ -10,6 +8,59 @@ body {
   background-image: url("background2.png");
 }
 
+*{
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex-direction: row;
+  
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    background-color: slateblue;
+    flex-direction: row;
+  }
+  
+  ul li {
+    display: inline-block;
+    position: relative;
+    flex-direction: row;
+  }
+  
+  ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #ece7e7;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    flex-direction: row;
+  }
+  
+  ul li ul.dropdown li {
+    display: block;
+  }
+  
+  ul li ul.dropdown {
+    width: 100%;
+    background: darkmagenta;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    flex-direction: row;
+  }
+  
+  ul li a:hover {
+    background: #5F5F67;
+  }
+  
+  ul li:hover ul.dropdown {
+    display: block;
+    flex-direction: row;
+  }
+  
 nav {
   display: flex;
   flex-wrap: wrap;
