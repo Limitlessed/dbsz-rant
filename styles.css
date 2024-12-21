@@ -135,3 +135,38 @@ color: #000;
   background-color: aqua;
   color: #000;
  }
+
+ .container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+
+}
+
+.box2 {
+  font-size: 1em;
+  text-align: center;
+}
+
+#box5 {
+  background-color: #5F5F67;
+  color: #000;
+  height: 500px;
+  width: 200px;
+}
+
+#box6 {
+  background-color: #5F5F67;
+  color: #000;
+  width: 600px;
+  height: 400px;
+
+}
+
+#box7 {
+  background-color: #5F5F67;
+  color: #000;
+  height: 500px;
+  width: 200px;
+}
